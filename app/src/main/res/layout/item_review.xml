@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/reviewItem_imageview_location_kind"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/parking" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/reviewItem_review_write_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(작성한 시간)"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:textSize="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/reviewItem_kind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="주차장"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"/>
+                <RatingBar
+                    android:id="@+id/reviewItem_ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:isIndicator="false"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="0.5"
+                    android:max="5" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/reviewItem_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="광명시청공영주차장"
+                android:singleLine="true"
+                android:textSize="18dp"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/reviewItem_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(리뷰)"
+                android:singleLine="true"
+                android:textSize="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"/>
+</LinearLayout>

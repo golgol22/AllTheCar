@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "486636198510",
+    "firebase_url": "https://allthecar-e5393.firebaseio.com",
+    "project_id": "allthecar-e5393",
+    "storage_bucket": "allthecar-e5393.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486636198510:android:f8d8190595417a83",
+        "android_client_info": {
+          "package_name": "com.example.allthecar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486636198510-0mfdl1jjhv1u28c6ipijpeqo6m4hrg12.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.allthecar",
+            "certificate_hash": "a54b14f770d1a90d5d16cdf09f0d2ddae4da9cb1"
+          }
+        },
+        {
+          "client_id": "486636198510-am782j4o4opgtr9oku2rd6ea3kig2gn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8VMDptwtg8IGUkRODCJbMwMGNNxvc8Cc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486636198510-am782j4o4opgtr9oku2rd6ea3kig2gn7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

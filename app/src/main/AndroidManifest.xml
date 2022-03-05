@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.allthecar">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".CommonApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_car"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.ListViewActivity" />
+
+        <!--<activity android:name=".CarWashFragment" />-->
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="6c3b2b1cd774025afbb2b29d90a3e73f" />
+
+        <!--<activity android:name=".RentalCarFragment" />-->
+        <!--<activity android:name=".ChargeCarFragment" />-->
+        <!--<activity android:name=".RepairShopFragment" />-->
+        <!--<activity android:name=".RestAreaFragment" />-->
+
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.LoginActivity"/>
+        <activity android:name=".Activity.JoinActivity"/>
+        <activity android:name=".Activity.MypageActivity"/>
+        <activity android:name=".Activity.ReviewListActivity"/>
+        <activity android:name=".Activity.LikeListActivity"/>
+        <activity android:name=".Activity.ReviewWriteActivity"/>
+        <activity android:name=".Activity.DetailActivity"/>
+        <activity android:name=".Activity.SearchDetailActivity"/>
+
+        <activity
+            android:name=".Activity.LaunchActivity"
+            android:theme="@style/LaunchTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+
+
+
+
+</manifest>

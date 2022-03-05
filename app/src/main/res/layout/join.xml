@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="@color/colorLine"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* 기본 정보"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/join_edittext_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint=" 이름"
+                android:background="#ECE8E8"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/join_edittext_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint=" 아이디(이메일)"
+                android:background="#ECE8E8"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/join_edittext_pw"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint=" 비밀번호"
+                android:inputType="textPassword"
+                android:background="#ECE8E8"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/join_edittext_pw_check"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint=" 비밀번호 확인"
+                android:inputType="textPassword"
+                android:background="#ECE8E8"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/join_edittext_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint=" 핸드폰 번호(-제외)"
+                android:background="#ECE8E8"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"/>
+
+            <CheckBox
+                android:id="@+id/join_checkbox_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 개인정보수집동의"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/join_button_join"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:text="회원가입"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
